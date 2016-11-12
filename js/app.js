@@ -1,18 +1,18 @@
-const howManyBiebs = 20;
+var howManyBiebs = 20;
 
 function randomNumber(){
-  const min = 0;
-  const max = 600;
+  var min = 30;
+  var max = 1000;
   return Math.random() * (max - min) + min + 'px';
 }
 
 function randomBiebs() {
-  const imageUrl = 'https://i.ytimg.com/vi/kffacxfA7G4/maxresdefault.jpg';
+  var imageUrl = 'https://i.ytimg.com/vi/kffacxfA7G4/maxresdefault.jpg';
   
-  for(let i = 0; i < howManyBiebs; i++){
-    const xPosition = randomNumber();
-    const yPosition = randomNumber();
-    let element = document.createElement('img');
+  for(var i = 0; i < howManyBiebs; i++){
+    var xPosition = randomNumber();
+    var yPosition = randomNumber();
+    var element = document.createElement('img');
     element.style.position = 'absolute';
     element.style.left = xPosition;      
     element.style.top = yPosition;
