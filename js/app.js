@@ -26,17 +26,16 @@ function randomBiebs() {
 function changeElementColors() {
   var colors = ["#0000FF", "#00e5ee", "#00FFFF"];
   var divsOnPage = document.getElementsByTagName("div");
+  var p = document.getElementById("changeColor");
   for (var i = 0; i < divsOnPage.length; i++){
     divsOnPage[i].style.backgroundColor = colors[i];
   }
-  for (var i = 0; i < pOnPage.length; i++){
-
-  }
+  p.style.backgroundColor = colors[0];
 }
 
 function keyboardPress(){
   var keyPressedElement = document.getElementsByClassName("onkeypress");
   for (var i = 0; i < keyPressedElement.length; i++){
-    keyPressedElement[i].innerHTML = event.key;
+    keyPressedElement[i].innerHTML += event.key;
   }
 }
